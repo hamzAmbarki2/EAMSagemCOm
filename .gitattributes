@@ -33,3 +33,5 @@
 *.dxf filter=lfs diff=lfs merge=lfs -text
 *.wmf filter=lfs diff=lfs merge=lfs -text
 *.emf filter=lfs diff=lfs merge=lfs -text
+# Keep this small annotated diagram out of LFS (LFS upload is blocked in cloud sessions)
+presentation/usecase_with_note.png -filter -diff -merge
