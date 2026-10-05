@@ -1,0 +1,3 @@
+# Pages included by main.tex are kept out of Git LFS so the report builds from a plain clone
+front/*.pdf -filter binary
+back/*.pdf -filter binary
