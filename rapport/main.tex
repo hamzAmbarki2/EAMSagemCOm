@@ -3,8 +3,13 @@
 
 \begin{document}
 
-\input{front/page_de_garde}
-\clearpage
+% Unnumbered opening pages: ESPRIT cover (source: front/page_de_garde.docx)
+% and the supervisors' signed validation of the report submission
+\hypersetup{pageanchor=false}
+\includepdf[pages=1]{front/page_de_garde.pdf}
+\includepdf[pages=1]{front/validation_encadrants.pdf}
+% \includepdf[pages=1]{front/attestation_stage.pdf}
+\hypersetup{pageanchor=true}
 \pagenumbering{roman}
 
 \input{front/remerciements}
@@ -30,5 +35,8 @@
 \input{back/abbreviations}
 \clearpage
 \input{back/annexes}
+
+% ESPRIT back cover
+\includepdf[pages=1]{back/quatrieme_couverture.pdf}
 
 \end{document}
